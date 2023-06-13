@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+  
+    <title>NIVE^LIBRARY</title>
+    <script>
+      function animateTitle() {
+        var title = document.title;
+        var lastChar = title.charAt(title.length - 1);
+        var newTitle = lastChar + title.substring(0, title.length - 1);
+        document.title = newTitle;
+        setTimeout(animateTitle, 200);
+      }
+      animateTitle();
+    </script>
+    
+  </head>
+  <body>
+    
+    <div id="root"></div>
+  
+  </body>
+</html>
